@@ -1,5 +1,5 @@
 
-class Employee():
+class Employee:
     def __init__(self, name, age, salary):
         self.name = name
         self.age = age
@@ -36,7 +36,7 @@ print("emp list sorted by age:", sorted_employees)
 
 # using lambda sort key
 sorted_employees = sorted(emp_list, key=lambda e: e.salary, reverse=True)
-print("emp list sorted by lambda age:", sorted_employees)
+print("emp list sorted by lambda salary:", sorted_employees)
 
 # sort using attrgettr
 from operator import attrgetter
