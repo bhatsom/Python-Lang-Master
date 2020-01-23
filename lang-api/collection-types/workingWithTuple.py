@@ -1,5 +1,6 @@
 # https://www.techbeamers.com/python-tuple/
 
+print("\n\n=== Creating Tuple in different ways ===")
 # Creating A Tuple Of Size One
 # A single element surrounded by parenthesis will create string/int/float etc. instead of a tuple
 my_tuple = ("single")
@@ -23,7 +24,7 @@ print("type(my_tuple)-5", type(my_tuple))
 my_tuple = tuple( { 10.5})
 print("type(my_tuple)-6", type(my_tuple))
 
-# accessing elements from Tuple
+print("\n\n=== accessing elements from Tuple ===")
 vowel_tuple = ('a','e','i','o','u')
 print("The tuple:", vowel_tuple, "Length:", len(vowel_tuple))
 
@@ -32,15 +33,15 @@ print("vowel_tuple[0]:", vowel_tuple[0])
 
 # Accessing the last element
 print("vowel_ tuple[length-1]: ", vowel_tuple[len(vowel_tuple) - 1])
-# Indexing mechanism in a tuple of tuples
 
+# Indexing mechanism in a tuple of tuples
 t_o_t = (('Jan', 'feb', 'mar'), ('sun', 'mon', 'wed'))
 # Accessing elements from the first sub tuple
 print("t_o_t[0][2]:", t_o_t[0][2])
 # Accessing elements from the second sub tuple
 print("t_o_t[1][2]:", t_o_t[1][2])
 
-# Modify/Update A Tuple
+print("\n\n=== Modify/Update A Tuple ===")
 # Tuples are immutable - once we assign a set of elements, Python won't allow it to change
 # But, there is a catch. If the items are mutable, we can change the elements instead of directly modifying the tuple
 py_tuple = (22, 33, 55, 66, [88, 99])
@@ -61,17 +62,18 @@ print("Tuple after modification:", py_tuple)
 py_tuple = ('mon', 'tue', 'wed')
 print("Tuple after reassignment:", py_tuple)
 
-# + (concatenation) and * (repeat) operators.
+print("\n\n===  + (concatenation) and * (repeat) operators. ===")
 first_tuple = ('p', 'y', 't')
 second_tuple = ('h', 'o', 'n')
 full_tuple = first_tuple + second_tuple
-print("full_h\ple: ", full_tuple)
+print("full_tuple: ", full_tuple)
 
 init_tuple =("fork",)
 fork_tuple = init_tuple * 5
 print("fork_tuple: ", fork_tuple)
 
-# Remove/Delete A Tuple
+
+print("\n\n=== Remove/Delete A Tuple ===")
 py_tuple = ('p', 'y', 't', 'h', 'o', 'n')
 # we can't delete a particular item from a tuple
 try:
@@ -86,12 +88,12 @@ try:
 except Exception as ex:
     print("print(py_Juple) =>. Error:", ex)
 
-# existence check
+print("\n\n=== Existence check ===")
 py_tuple = ('p', 'y', 't', 'h', 'o', 'n')
 print("Does 'p' exist?", 'p' in py_tuple)
 print("Does 'Z' exist?", 'Z' in py_tuple)
 
-# Traversing In A Python Tuple
+print("\n\n=== Traversing A Tuple ===")
 for item in py_tuple:
     print("Item: ", item)
 

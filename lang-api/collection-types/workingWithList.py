@@ -1,6 +1,6 @@
 # https://www.techbeamers.com/python-list/
 
-#using[]
+print("\n\n=== Creating List in different ways ===")
 listl = []
 list2 = [1 , 2, 3]
 list3 = [1, "Hello World!", 3.7]
@@ -18,8 +18,7 @@ list7 = list([1, 2, [3, 4, 5]])
 print('list6:', list6)
 print('list7: ', list7)
 
-# Using comprehension -intuitive way of creating List
-
+print("\n\n=== Using comprehension -intuitive way of creating List ===")
 # Syntax: theList = [expression(iter) for iter in oldList if filter(iter)]
 theList = [i for i in range(5)]
 # [0, 1, 2, 3, 4]
@@ -42,7 +41,7 @@ for e in enumerate(months):
     print(e)
 print("oddMonths: ", oddMonths)
 
-# Creating Multi-Dimensional List
+print("\n\n=== Multi-Dimensional List ===")
 singleList = [0] * 3
 print("singleList: {}".format( singleList))
 
@@ -66,3 +65,4 @@ print("multiList: {} ".format(multiList))
 theList = [i for i in range( 5)]
 print('theList: {}'.format( theList))
 print('theList sliced 2-5: {}'.format(theList[1:5]))
+
