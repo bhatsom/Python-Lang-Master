@@ -1,3 +1,4 @@
+
 class BookStore:
 
     noOfBooks = 0
@@ -10,6 +11,7 @@ class BookStore:
     def bookInfo(self):
         print("Book Title:", self.title)
         print("Book Author:", self.author, "\n")
+
 
 # create few instances of BookStore
 b1 = BookStore("Great Expectations", "Charles Dickens")

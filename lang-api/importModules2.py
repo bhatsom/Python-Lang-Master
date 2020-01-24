@@ -16,13 +16,13 @@ print(sqrt(144))
 # let's import specific functions - but still imported ones could collide with similar named functions in our code
 """
 from math import sqrt, pow
-print('namespace 2: ', dir())
+print('namespace 4: ', dir())
 print(sqrt(144))
 """
 
 # a suggested way is to import just the module - but the catch is that we need to use
 # module name every time we use functions
 import math
-print('namespace_2:', dir())
+print('namespace_5:', dir())
 print(math.sqrt(144))
 
