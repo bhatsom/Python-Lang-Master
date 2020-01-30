@@ -28,3 +28,5 @@ print("x_sorted: {}".format(x_sorted))
 x_sorted = np.argsort(x)[-2:]
 print("x_sorted: {}".format(x_sorted))
 
+print("===== replace odd numbers in array with -1 =======")
+arr = np.arange(0, 10, 1)
