@@ -7,9 +7,9 @@ print("===== using map =======")
 
 list_1 = [1, 2, 3, 4]
 
-def square_up(list_1):
+def square_up(input_list):
     list_2 = []
-    for num in list_1:
+    for num in input_list:
         list_2.append(num ** 2)
     return list_2
 
@@ -28,8 +28,8 @@ print("Square up using list comprehension: {}".format(square_map_lambda))
 
 
 print("\n\n===== using filter =======")
-def over_two(list_1):
-    list_2 = [n for n in list_1 if n > 2]
+def over_two(input_list):
+    list_2 = [n for n in input_list if n > 2]
     return list_2
 
 

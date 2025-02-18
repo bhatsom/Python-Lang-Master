@@ -2,7 +2,7 @@
 
 print("\n\n=== Creating List in different ways ===")
 listl = []
-list2 = [1 , 2, 3]
+list2 = [1, 2, 3]
 list3 = [1, "Hello World!", 3.7]
 
 # using list() constructor
@@ -34,16 +34,16 @@ combinationsWithFilter = [x+y for x in 'abc' for y in 'def' if x != 'b' and y !=
 print("combinationsWithFilter: {}", combinationsWithFilter)
 
 # with index _ using enumeration
-months = ['.jan', 'feb', 'mar', 'apr', 'may', '.jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dee']
+months = ['jan', 'feb', 'mar', 'apr', 'may', '.jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dee']
 
-oddMonths = [month for index, month in enumerate(months) if (index% 2 == 0)]
+oddMonths = [month for index, month in enumerate(months) if (index % 2 == 0)]
 for e in enumerate(months):
     print(e)
 print("oddMonths: ", oddMonths)
 
 print("\n\n=== Multi-Dimensional List ===")
 singleList = [0] * 3
-print("singleList: {}".format( singleList))
+print("singleList: {}".format(singleList))
 
 # not the right way - only one reference is created for all sub-lists - change to one will affect all
 multiList = [[0] * 3] * 3
@@ -60,7 +60,7 @@ multiList[0][2] = 5
 print("multiList: {} ".format(multiList))
 
 #TODO
-# Extend List using ExtendO And AppendO
+# Extend List using Extend() And Append()
 # slicing List
 theList = [i for i in range( 5)]
 print('theList: {}'.format( theList))

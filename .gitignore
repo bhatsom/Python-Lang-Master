@@ -6,3 +6,9 @@
 
 # IDE specific virtual env
 *venv/*
+
+# Virtual Environments
+lang-master
+
+# pycache
+__pycache__

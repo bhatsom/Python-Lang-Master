@@ -17,6 +17,7 @@ plt.title("X vs Y")
 data = {"apple": 50, "banana": 20, "orange": 30}
 names = data.keys()
 values = data.values()
+plt.interactive(True)
 plt.bar(names, values)
 
 
